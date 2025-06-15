@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Shop - Moda e Estilo</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"  rel="stylesheet">
+</head>
+<body>
+
+
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><i class="fas fa-shopping-bag"></i> StylesShop</h1>
+            </div>
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="#home" data-section="home">Início</a></li>
+                    <li><a href="#tenis" data-section="tenis">Tênis</a></li>
+                    <li><a href="#calcados" data-section="calcados">Calçados</a></li>
+                    <li><a href="#roupas" data-section="roupas">Roupas</a></li>
+                    <li><a href="#vestidos" data-section="vestidos">Vestidos</a></li>
+                    <li><a href="#acessorios" data-section="acessorios">Acessórios</a></li>
+                    <li><a href="#bolsas" data-section="bolsas">Bolsas</a></li>
+                    <li><a href="#chapeus" data-section="chapeus">Chapéus</a></li>
+                    <li><a href="#joias" data-section="joias">Jóias</a></li>
+                    <li><a href="#links" data-section="links">Links</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-mobile" id="mobileNav">
+                <ul>
+                    <li><a href="#home" data-section="home">Início</a></li>
+                    <li><a href="#tenis" data-section="tenis">Tênis</a></li>
+                    <li><a href="#calcados" data-section="calcados">Calçados</a></li>
+                    <li><a href="#roupas" data-section="roupas">Roupas</a></li>
+                    <li><a href="#vestidos" data-section="vestidos">Vestidos</a></li>
+                    <li><a href="#acessorios" data-section="acessorios">Acessórios</a></li>
+                    <li><a href="#bolsas" data-section="bolsas">Bolsas</a></li>
+                    <li><a href="#chapeus" data-section="chapeus">Chapéus</a></li>
+                    <li><a href="#joias" data-section="joias">Jóias</a></li>
+                    <li><a href="#links" data-section="links">Links</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Descubra Seu Estilo</h1>
+            <p>As melhores marcas e tendências em um só lugar</p>
+            <button class="cta-button" onclick="scrollToSection('tenis')">Explorar Coleção</button>
+        </div>
+    </section>
+
+    <section id="tenis" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Tênis</h2>
+            <div class="products-grid" id="tenisGrid"></div>
+        </div>
+    </section>
+
+    <section id="calcados" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Calçados</h2>
+            <div class="products-grid" id="calcadosGrid"></div>
+        </div>
+    </section>
+
+    <section id="roupas" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Roupas</h2>
+            <div class="products-grid" id="roupasGrid"></div>
+        </div>
+    </section>
+
+    <section id="vestidos" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Vestidos</h2>
+            <div class="products-grid" id="vestidosGrid"></div>
+        </div>
+    </section>
+
+    <section id="acessorios" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Acessórios</h2>
+            <div class="products-grid" id="acessoriosGrid"></div>
+        </div>
+    </section>
+
+    <section id="bolsas" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Bolsas</h2>
+            <div class="products-grid" id="bolsasGrid"></div>
+        </div>
+    </section>
+
+    <section id="chapeus" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Chapéus</h2>
+            <div class="products-grid" id="chapeusGrid"></div>
+        </div>
+    </section>
+
+    <section id="joias" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Jóias</h2>
+            <div class="products-grid" id="joiasGrid"></div>
+        </div>
+    </section>
+
+    <section id="links" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Links de Referência</h2>
+            <div class="links-container" id="linksGrid"></div>
+        </div>
+    </section>
+
+    <div class="social-buttons">
+        <a href="https://github.com/AndersonRedfield?tab=repositories" class="social-btn github" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/i_am_andersonpacheco/" class="social-btn instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/anderson-pacheco-dev/" class="social-btn linkedin" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:andersonziggler121@gmail.com" class="social-btn email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/5571992942934" class="social-btn whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StylesShop - Moda E Estilo</h3>
+                    <p>Sua loja de moda e estilo online</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li> 
+                        <li><a href="#tenis">Tênis</a></li>
+                        <li><a href="#calcados">Calçados</a></li>
+                        <li><a href="#roupas">Roupas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@stylehub.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Style Shop. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="rodape">
+      WhatsApp Do Desenvolvedor Do Site <a href="http://wa.me/5571992942934" target="_blank">Anderson Pacheco</a> - 2025 StyleHub. Todos os direitos reservados.
+    </footer>
+
+
+    <script src="Script.js"></script>
+</body>
+</html>
